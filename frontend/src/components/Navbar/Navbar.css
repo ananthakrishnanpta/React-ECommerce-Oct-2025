@@ -1,0 +1,11 @@
+.navbar {
+    navbar-brand {
+        color: lightcyan;
+    }
+    li, a, nav-link {
+        color: teal;
+    }
+    .active { 
+        color: yellow;
+    }
+}

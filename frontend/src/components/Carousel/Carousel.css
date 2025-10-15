@@ -1,0 +1,5 @@
+.home-carousel img { 
+    height: 400px;
+    object-fit: cover;
+    object-position: top;
+}
