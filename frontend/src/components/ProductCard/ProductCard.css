@@ -1,0 +1,21 @@
+.prod {
+    .card {
+        height: 400px;
+        overflow: hidden;
+        img.card-img-top {
+            height: 60%;
+            background-color: black;
+            object-fit: cover;
+            object-position: center;
+        }
+        .card-body { 
+            height: 40%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            button { 
+                height: 40px;
+            }
+        }
+    }
+}
