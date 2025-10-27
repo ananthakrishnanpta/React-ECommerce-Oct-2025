@@ -9,7 +9,7 @@ const App = () => {
       <Navbar />
     </header>
 
-    <main className="container mt-4">
+    <main className="container mt-4 p-5">
       <Outlet />
     </main>
 

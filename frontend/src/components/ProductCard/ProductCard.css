@@ -1,21 +1,74 @@
+
+/* root wrapper from the grid */
 .prod {
-    .card {
-        height: 400px;
-        overflow: hidden;
-        img.card-img-top {
-            height: 60%;
-            background-color: black;
-            object-fit: cover;
-            object-position: center;
-        }
-        .card-body { 
-            height: 40%;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            button { 
-                height: 40px;
-            }
-        }
-    }
+  padding: 0.5rem;
+}
+
+/* make card fill the column height and keep consistent layout */
+.prod .card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+/* clickable area - full width link */
+.card-link-area {
+  display: block;
+  color: inherit;
+}
+
+/* image - fixed height, cover, centered */
+.card-img-top {
+  width: 100%;
+  height: 200px; /* adjust as needed */
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+/* card body take remaining space and space items */
+.card-body {
+  flex: 1 1 auto; /* allow body to resize */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0.75rem;
+}
+
+/* title spacing */
+.card-title {
+  margin: 0 0 0.5rem 0;
+  font-size: 1rem;
+}
+
+/* price & small text */
+.card-text.mb-1 {
+  margin-bottom: 0.25rem;
+}
+
+/* footer  */
+.card-footer {
+  padding: 0.75rem;
+}
+
+/* button */
+.card-footer .btn {
+  height: 40px;
+  font-weight: 600;
+}
+
+/* smaller image on small screens */
+@media (max-width: 576px) {
+  .card-img-top {
+    height: 160px;
+  }
+}
+
+/* hover  */
+.prod .card:hover {
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
+  transition: transform 180ms ease, box-shadow 180ms ease;
 }
