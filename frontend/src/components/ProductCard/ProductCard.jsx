@@ -26,6 +26,8 @@ const ProductCard = ({ product }) => {
           />
           <div className="card-body">
             <h5 className="card-title">{product.title}</h5>
+
+            {/* Conditional rendering using ternary operator */}
             {loading ? (
               <p className="card-text text-muted">Loading currency...</p>
             ) : (
@@ -38,6 +40,7 @@ const ProductCard = ({ product }) => {
                 </p>
               </>
             )}
+
           </div>
         </Link>
 

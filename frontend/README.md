@@ -1,10 +1,26 @@
 # React Features Used in This Project
 
+```
+<react-app>-
+  /public
+  /src -
+    -/assets
+    -/components
+    -/context
+    -/pages
+    -App.jsx
+    -App.css
+    -index.css
+    -main.jsx
+  -index.html
+  -package.json
+
+```
 ---
 
 ## 1. Functional Components
 
-All UI pieces like the Navbar, ProductCard, and Home page are built as **functional components** instead of class components.
+All UI pieces like the `Navbar`, `ProductCard`, and `Home page` are built as **functional components** instead of class components.
 
 **Syntax:**
 
@@ -211,6 +227,8 @@ const router = createBrowserRouter([
 **Explanation:**
 React Router allows navigation without reloading the page, providing a single-page app experience with multiple routes.
 
+
+
 ---
 
 ## 12. Context + API Integration with Axios
@@ -230,13 +248,16 @@ useEffect(() => {
 ```
 
 **Explanation:**
-Axios is used to make HTTP requests. The fetched data is stored in context and shared globally for conversions.
+Axios is an HTTP client. The fetched data is stored in context and shared globally for conversions.
 
 ---
 
 ## 13. Dynamic Class and Attribute Binding
 
 React allows conditional or dynamic assignment of classes and attributes.
+  - While mapping array objects to components, each component carries its own values for props in which attributes like `href`, `src`, `alt`, `target`, `style`, etc can be used for providing dynamic component building.
+  - Class names can also be decided on the basis of props using conditional statements and expressions.
+
 
 **Syntax:**
 
