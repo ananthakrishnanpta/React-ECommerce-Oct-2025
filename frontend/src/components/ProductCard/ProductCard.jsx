@@ -8,7 +8,9 @@ const img_server_path = "/images/products/";
 const ProductCard = ({ product }) => {
   const { convertPrice, getSymbol, loading } = useCurrency();
 
+  // Using convertPrice() to calculate converted price of individual product.
   const converted = convertPrice(product.price);
+
 
   return (
     <div className="prod col-12 col-sm-6 col-md-4 col-lg-3">
@@ -34,6 +36,8 @@ const ProductCard = ({ product }) => {
               <>
                 <p className="card-text mb-1 fw-bold">
                   {getSymbol()} {converted}
+                  {/* getSymbol retrieves currency symbol */}
+                  {/* converted shows converted currency after calculation */}
                 </p>
                 <p className="card-text text-secondary small">
                   (Base: ${product.price} USD)
