@@ -22,6 +22,7 @@ const fake_products = [
     }
 ]
 const Home = () => {
+    document.title = '🏠';
     return(
         <>
         <Carousel />

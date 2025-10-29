@@ -11,7 +11,7 @@ const ProductDetails = () => {
 
   // Try to read from state (from Home)
   const product = state?.product;
-
+  
   // Handle direct access (no state)
   if (!product) {
     return (
@@ -24,6 +24,7 @@ const ProductDetails = () => {
       </div>
     );
   }
+  document.title = `${product.title}`;
 
   const convertedPrice = convertPrice(product.price);
 

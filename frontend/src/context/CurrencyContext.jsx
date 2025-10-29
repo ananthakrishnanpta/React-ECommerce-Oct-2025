@@ -64,6 +64,8 @@ export const CurrencyProvider = ({ children }) => {
 
     // Return appropriate currency symbol
     const getSymbol = () => {
+
+        // accessing state `currency`
         switch (currency) {
             case "USD": return "$";
             case "EUR": return "€";
