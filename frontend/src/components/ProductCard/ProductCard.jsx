@@ -6,6 +6,10 @@ import "./ProductCard.css";
 const img_server_path = "/images/products/";
 
 const ProductCard = ({ product }) => {
+
+  // Utilizing the context in the Product Card component.
+  // convertPrice function gets the context of currency 
+  // conversion rates in realtime.
   const { convertPrice, getSymbol, loading } = useCurrency();
 
   // Using convertPrice() to calculate converted price of individual product.
@@ -50,6 +54,7 @@ const ProductCard = ({ product }) => {
 
         <div className="card-footer bg-transparent border-0">
           <button className="btn btn-primary w-100" type="button">
+            {/* dysfunctional */}
             Add To Cart
           </button>
         </div>

@@ -74,10 +74,12 @@ const Navbar = () => {
               <select
                 id="currencySelect"
                 value={currency}
+                // event handler :> onChange -> using to set state of currency
                 onChange={(e) => setCurrency(e.target.value)}
                 className="form-select form-select-sm bg-dark text-light border-light w-auto"
                 aria-label="Currency selector"
               >
+                {/* Using mapping to build dynamic selection list for currency */}
                 {["USD", "EUR", "INR", "GBP", "JPY"].map((code) => (
                   <option key={code} value={code}>
                     {code}
